@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vikweck.main.BackgroundImageLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    custom:backgroundImage="@drawable/dlg_hg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@drawable/alarmtime_dlg_background"
+	    android:padding="15dp">
+	    
+	    
+	    <vikweck.main.DynamicImageView
+		    android:id="@+id/vol_ico"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_weight="0"
+			custom:fixedDimension="height"
+	        android:src="@drawable/ic_speaker"
+	        android:layout_gravity="left"/>
+	    
+	    <vikweck.main.BackgroundImageLayout
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+		    custom:backgroundImage="@drawable/dlg_display"
+		    android:gravity="right">
+		    <LinearLayout 
+				android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="center_horizontal"
+				android:padding="15dp">
+					<LinearLayout 
+						android:id="@+id/vol_linlayout_lights"
+						android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:gravity="center_horizontal"
+				        android:paddingLeft="10dp"
+				        android:paddingRight="10dp"
+				        android:paddingTop="5dp">
+					</LinearLayout>
+			    	<SeekBar 
+			    	    android:id="@+id/seekbar_volume"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:paddingLeft="10dp"
+				        android:paddingRight="10dp"
+				        android:minHeight="15dp"
+				        android:maxHeight="15dp"
+				        android:progressDrawable="@drawable/seekbar_progress"
+				        android:thumb="@drawable/slider_thumb"/>
+	    	</LinearLayout>
+	    </vikweck.main.BackgroundImageLayout>
+	    
+	    <vikweck.main.DynamicImageView
+		    android:id="@+id/dlg_volume_accept"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp"
+	        android:layout_weight="0"
+			custom:fixedDimension="height"
+	        android:src="@drawable/dlg_button_ok"
+	        android:layout_gravity="center"/>
+	
+	</LinearLayout>
+</vikweck.main.BackgroundImageLayout>

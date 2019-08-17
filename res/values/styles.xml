@@ -1,0 +1,23 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="vikDisplayTextTheme">
+        <!-- item name="android:gravity">center_horizontal</item-->
+        <item name="android:textSize" tools:ignore="SpUsage">45dp</item><!-- 35sp</item> -->
+        <item name="android:textColor">#aaaaaa</item> <!-- bbbbbb -> wie HG --> <!-- off: 9c6f2a -->
+        <item name="android:shadowColor">#ffffff</item>
+	    <item name="android:shadowDx">0</item>
+	    <item name="android:shadowDy">0</item>
+	    <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <style name="alarmTimeButtonTheme">
+        <item name="android:layout_width">60dp</item><!-- fill_parent</item> -->
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textColor">@android:color/transparent</item><!-- #e4a91a -->
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+</resources>

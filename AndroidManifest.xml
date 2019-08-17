@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vikweck.main"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- used to set default ringtone  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- used to play alarm sounds selected from external storage -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- used to wake device to sound alarm -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- used for vibrating alarm on silent -->
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true">
+        <activity
+            android:name=".Main"
+            android:label="@string/title_activity_alarm_main"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver 
+            android:name=".VikOuterAlarmReciever"
+            android:exported="false">
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vikweck.main.BackgroundImageLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    custom:backgroundImage="@drawable/dlg_hg">
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/alarmtime_dlg_background"
+    android:padding="5dp">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_weight="0"
+	    android:gravity="right">
+    	
+		<vikweck.main.DynamicImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1" 
+		    android:src="@drawable/ic_music"
+		    custom:fixedDimension="height"
+		    android:layout_marginTop="27dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginBottom="12dp"/>
+        
+	    <vikweck.main.BackgroundImageLayout
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		    android:layout_weight="4" 
+		    custom:backgroundImage="@drawable/dlg_display"
+		    android:layout_marginLeft="8dp"
+		    android:layout_marginRight="14dp"
+		    android:layout_marginTop="20dp"
+		    android:gravity="right">
+    		<HorizontalScrollView
+    		    android:layout_width="wrap_content"
+   				android:layout_height="wrap_content"
+		        android:requiresFadingEdge="horizontal"
+       			android:fadingEdgeLength="30dp"
+   				android:paddingLeft="20dp"
+   				android:paddingRight="20dp"
+   				android:paddingTop="10dp"
+   				android:paddingBottom="10dp"
+   				android:gravity="center">
+		        <TextView 
+		            android:id="@+id/title_currently_chosen_ringtone"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+        			android:scrollHorizontally="true"
+        			android:includeFontPadding="false"
+				    android:text=""
+			    	style="@style/vikDisplayTextTheme"/>
+			</HorizontalScrollView>
+    	</vikweck.main.BackgroundImageLayout>
+    </LinearLayout> <!-- /Title -->
+		        
+    <vikweck.main.BackgroundImageLayout
+	    android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+        android:layout_weight="1"
+	    custom:backgroundImage="@drawable/dlg_nrpad"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginBottom="15dp">
+	    
+	    <ListView 
+	        android:id="@+id/dlg_sounds_listview"
+		    android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:choiceMode="singleChoice"
+			android:listSelector="@android:color/transparent"
+			android:gravity="center"
+	    	android:paddingTop="10dp"
+	    	android:paddingBottom="10dp"
+	    	android:paddingLeft="20dp"
+	    	android:paddingRight="20dp"	    	
+	    	android:requiresFadingEdge="vertical"
+			android:fadingEdgeLength="20dp">
+	    </ListView>
+	</vikweck.main.BackgroundImageLayout>
+	
+	<vikweck.main.DynamicImageView
+	    android:id="@+id/dlg_sounds_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+		custom:fixedDimension="height"
+        android:src="@drawable/dlg_button_ok"
+        android:layout_gravity="center"/>
+</LinearLayout>
+</vikweck.main.BackgroundImageLayout>

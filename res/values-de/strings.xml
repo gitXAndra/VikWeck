@@ -1,0 +1,41 @@
+<!-- local: de -->
+
+<resources>
+
+    <string name="app_name">VikWeck</string>
+    <string name="title_activity_alarm_main">Wecker</string>
+    <string name="menu_help">Hilfe</string>
+    <string name="help_text">
+        Snoozen ist durch Antippen des Bildschirms möglich, 
+        dierektes Ausschalten des Weckers durch Drücken einer Lautstärketaste.
+    </string>
+    <string name="menu_about">Info</string>
+    <string name="info_title">Wecker - Info</string>
+    <string name="info_text">
+        Version: %s\n\n
+        Design und Implementierung durch Sandra Sichting.\n\n
+        Weitere Infos unter\n
+        \t www.graustufenwelt.de\n\n
+        Kontakt:\n
+        \t sandra.sichting@graustufenwelt.de
+    </string>
+    <string name="ringtone_not_found">Bitte Audiodatei überprüfen!</string>
+    <string name="menu_snooze">Snooze-Zeit</string>
+    <string name="ringtones_list_footer_text">eigene Musik wählen</string>
+    <string name="title_dlg_snoozetime">Snooze-Zeit ändern</string>
+    <string-array name="array_snoozetimes">
+        <item>1 Minute</item>
+        <item>2 Minuten</item>
+        <item>3 Minuten</item>
+        <item>5 Minuten</item>
+        <item>7 Minuten</item>
+        <item>10 Minuten</item>
+        <item>15 Minuten</item>
+        <item>20 Minuten</item>
+        <item>30 Minuten</item>
+    </string-array>
+    <string name="zurueck_btn">OK</string>
+    <string name="update_file_location_warning">Bitte Audiodatei überprüfen.</string>
+
+    
+</resources>

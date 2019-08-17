@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vikweck.main.BackgroundImageLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+     custom:backgroundImage="@drawable/dlg_hg" xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:padding="5dp"
+    style="@style/vikDisplayTextTheme"
+    android:background="@drawable/alarmtime_dlg_background"><!-- #EAE5CA -->
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right">
+    	
+		<vikweck.main.DynamicImageView
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1" 
+		    android:src="@drawable/ic_weckzeit"
+		    custom:fixedDimension="height"
+		    android:layout_marginTop="27dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginBottom="12dp"/>
+        
+	    <vikweck.main.BackgroundImageLayout
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_weight="4" 
+		    custom:backgroundImage="@drawable/dlg_display"
+		    android:layout_marginLeft="8dp"
+		    android:layout_marginRight="14dp"
+		    android:layout_marginTop="20dp">
+		    <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+			    android:padding="8dp" 
+	    		android:gravity="center">
+	    		
+		        <LinearLayout 
+			        android:orientation="horizontal"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="5"
+		    		android:gravity="right">
+
+			        <TextView
+			            android:id="@+id/dlg_alarmtime_input_alarm_hour0"
+			            style="@style/vikDisplayTextTheme"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="0"
+			            tools:ignore="HardcodedText" />
+
+			        <TextView
+			            android:id="@+id/dlg_alarmtime_input_alarm_hour1"
+			            style="@style/vikDisplayTextTheme"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="0"
+			            tools:ignore="HardcodedText" />
+
+				</LinearLayout>
+		        
+		        <TextView
+		            android:id="@+id/dlg_alarmtime_dots"
+		            style="@style/vikDisplayTextTheme"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="2"
+		            android:gravity="center"
+		            android:text=":"
+		            tools:ignore="HardcodedText" />
+		        
+		        <LinearLayout 
+			        android:orientation="horizontal"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="5"
+		    		android:gravity="left">
+
+			        <TextView
+			            android:id="@+id/dlg_alarmtime_input_alarm_minute0"
+			            style="@style/vikDisplayTextTheme"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="0"
+			            tools:ignore="HardcodedText" />
+			        
+			        <TextView
+			            android:id="@+id/dlg_alarmtime_input_alarm_minute1"
+			            style="@style/vikDisplayTextTheme"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="0"
+			            tools:ignore="HardcodedText" />
+
+		        </LinearLayout>
+		    </LinearLayout>
+		</vikweck.main.BackgroundImageLayout>
+	</LinearLayout>
+
+    <!--   number pad - number - pad number - pad number pad     -->
+	
+	<vikweck.main.BackgroundImageLayout
+		android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    custom:backgroundImage="@drawable/dlg_nrpad"
+	    android:layout_margin="15dp">
+    	
+		<LinearLayout 
+		    android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="center_horizontal"
+			android:padding="10dp">
+		    
+			<LinearLayout 
+		    	android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_1"
+			        android:src="@drawable/dlg_nr_1"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_2"
+			        android:src="@drawable/dlg_nr_2"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_3"
+			        android:src="@drawable/dlg_nr_3"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+		    </LinearLayout>
+			<LinearLayout 
+		    	android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+		        android:orientation="horizontal">
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_4"
+			        android:src="@drawable/dlg_nr_4"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_5"
+			        android:src="@drawable/dlg_nr_5"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_6"
+			        android:src="@drawable/dlg_nr_6"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+		    </LinearLayout>
+			<LinearLayout 
+		    	android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+		        android:orientation="horizontal">
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_7"
+			        android:src="@drawable/dlg_nr_7"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_8"
+			        android:src="@drawable/dlg_nr_8"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_9"
+			        android:src="@drawable/dlg_nr_9"
+					android:layout_width="wrap_content"
+					android:layout_height="60dp"
+					android:layout_weight="1"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		    	android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+		        android:orientation="horizontal">
+		        
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_nr_0"
+			        android:src="@drawable/dlg_nr_0"
+					android:layout_width="wrap_content"
+					android:layout_height="70dp"
+					android:layout_weight="2"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+				<vikweck.main.DynamicImageView
+				    android:id="@+id/alarm_dlg_accept"
+			        android:src="@drawable/dlg_nr_ok"
+					android:layout_width="wrap_content"
+					android:layout_height="65dp"
+					android:layout_weight="3"
+					android:paddingTop="5dp"
+					custom:fixedDimension="height">
+				</vikweck.main.DynamicImageView>
+			</LinearLayout>
+		</LinearLayout>
+	</vikweck.main.BackgroundImageLayout>
+	
+</LinearLayout>
+
+</vikweck.main.BackgroundImageLayout>
