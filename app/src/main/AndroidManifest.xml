@@ -11,15 +11,10 @@
     <!-- used to wake device to sound alarm -->
     <uses-permission android:name="android.permission.VIBRATE"/>
     <!-- used for vibrating alarm on silent -->
-    
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="16" />
-    
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
         android:allowBackup="true">
         <activity
             android:name=".Main"
